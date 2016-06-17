@@ -1,16 +1,145 @@
-= Bespoke.js Starter Presentation
-:!sectids:
-:imagesdir: images
+= Duct Tape and the Camel: What I've Learned from Maintenance
+brian m. carlson
 
-== Topic Slide
-
-== Key Points
+== Brief Introduction
 [%build]
-* First point
-* Second point
-* Final point
 
-== !
-image::html5.svg[]
+// About me
+//   Git (Kerberos), Asciidoctor
+//   Perl codebase at cPanel (maintenance and releases)
+//   One-shot maintenance
 
-== The End
+* Show of hands: Who's done maintenance work?
+
+// Can be defined as you please
+
+== Maintenance
+[%build]
+
+* From (Old) French _maintenir_ (to maintain, stick to, persist, keep up)
+** From Latin (to support, hold in the hand)
+** French _maintenant_ (now)
+* Persistence, yes.
+* Keeping up, no.
+
+== Prioritization
+[%build]
+
+* You will _always_ have more bugs and work than time.
+* Prioritize.
+* Let the broken stuff go.
+* Better, get rid of it.
+
+== Code Reuse
+[%build]
+
+// Make it someone else's problem.
+
+* Reuse existing modules aggressively.
+* Better to add small patches than write something new.
+* Conversion from custom HTTP client to HTTP::Tiny
+** No performance impact
+** Automatic redirect support
+** Reduced complexity
+** Less to worry about
+
+// Conversion had one bug.
+
+== Say “No”
+[%build]
+
+* Typical questions:
+** Can I merge a 2000-line change for tomorrow's release?
+** Can I re-architect this subsystem in the maintenance branch?
+** Can you add major new functionality within a week and a half?
+* People don't like “no”
+** People like it better than the consequences
+** Important to set reasonable expectations
+** Offer alternatives.
+
+// Not saying “no” to lord power over people, but because the alternative is
+// madness.
+
+== Make the Rules the Bad Guy
+[%build]
+
+* Clear, articulable rules about what can go in maintenance branches
+* Clear limits on how much time can be spent on a task (e.g. 8 hours)
+* Clear coding standards
+* “I'm sorry, but it doesn't meet these criteria.”
+
+== Make the Tools Do the Work
+[%build]
+
+* Set clear perltidy rules
+** It's either tidy or it's not.
+** Re-tidying
+* Set clear perlcritic rules
+** Either it passes or it doesn't.
+* Codify as much as possible in automated tools.
+** Commit message standards.
+* Avoid arguments about style and coding standards.
+* Now the tools are the bad guy.
+
+// Next person to touch rule.
+
+== Say “Yes”
+[%build]
+
+* Be willing to make exceptions.
+** Can I add a small, non-regression bugfix that's affecting a lot of users?
+** Can I add improved error handling in this feature?
+* These _are_ exceptions.
+** If it becomes a problem, you can always go back to “no.”
+** See the rules.
+
+== Send a Patch
+[%build]
+
+* Sending even small, trivial patches are a great way to get it done.
+* Discussion becomes about the best way to solve the problem, instead of
+	_whether_ to solve the problem.
+* Makes changes much easier on maintainers.
+* Only one bad reaction, ever.
+
+// e.g. zsh, Debian, twofish
+
+== If You Break It, Fix It
+[%build]
+
+* You're going to break things.
+** Everyone makes mistakes.
+** Own up, and fix it right away.
+* People care that it's been fixed (and quickly), not who broke it.
+
+// Elevator conversation.
+
+== Use Your Editor
+[%build]
+
+* Examples from Vim
+* Syntastic & perlcritic
+* :Emod
+* Embedded Perl
+* Completion
+
+// Emphasize editor is personal choice.
+// Embedded Perl for refactoring.
+
+== Communicate
+[%build]
+
+* People really like to know what's going on (surprises are bad)
+* Be honest and transparent about expectations and timelines
+* Give a rationale when possible
+
+== Go Beyond the Minimum
+[%build]
+
+* Thanks for answering my question; here's a patch for the docs.
+* Here's how I solved your problem in case you hit it again.
+* People really appreciate this.
+
+// Other examples.  Andy & nursing.
+
+== Questions
