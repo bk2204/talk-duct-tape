@@ -133,13 +133,25 @@ brian m. carlson
 * Be honest and transparent about expectations and timelines
 * Give a rationale when possible
 
+== Questions
+
+== Bonus Slides
+
 == Go Beyond the Minimum
 [%build]
 
-* Thanks for answering my question; here's a patch for the docs.
-* Here's how I solved your problem in case you hit it again.
-* People really appreciate this.
+* Thanks for answering my question; here's a patch for the docs
+* Here's how I solved your problem in case you hit it again
+* People really appreciate this
 
 // Other examples.  Andy & nursing.
 
-== Questions
+== Make It All Testable
+[%build]
+
+* Every script should be a modulino
+* Isolate untestable code into functions for mocking
+** Service changes
+** Network and service interactions
+
+// create-swap
