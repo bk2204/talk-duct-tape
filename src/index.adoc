@@ -9,6 +9,7 @@ brian m. carlson
 //   Perl codebase at cPanel (maintenance and releases)
 //   One-shot maintenance
 
+* Polyglot maintenance programmer
 * Show of hands: Who's done maintenance work?
 
 // Can be defined as you please
@@ -78,6 +79,7 @@ brian m. carlson
 ** Either it passes or it doesn't.
 * Codify as much as possible in automated tools.
 ** Commit message standards.
+** cplint
 * Avoid arguments about style and coding standards.
 * Now the tools are the bad guy.
 
@@ -112,7 +114,7 @@ brian m. carlson
 ** Own up, and fix it right away.
 * People care that it's been fixed (and quickly), not who broke it.
 
-// Elevator conversation.
+// Elevator conversation about Roundcube and git apply.
 
 == Use Your Editor
 [%build]
