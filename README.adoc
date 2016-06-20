@@ -1,7 +1,14 @@
-= Bespoke.js Starter Presentation
+= Duct Tape and the Camel
 :experimental:
 
-A starter presentation for Bespoke.js that integrates asciidoctor-bespoke for generating the HTML from AsciiDoc.
+Almost every developer has to do maintenance work at some point, but not
+everyone enjoys it. This talk covers some of the things I've learned from
+maintenance, both Perl-specific items and human-related, in the hope that
+software maintenance need not be soul sucking.
+
+Topics to be covered include how to leverage tools for maintenance,
+communication and managing expectations, and small changes you can make that
+have a big impact.
 
 == Building the presentation
 
@@ -26,12 +33,7 @@ For Asciidoctor::
 
 === Setup
 
-Next, clone the repository and switch to the project directory:
-
- $ git clone -b asciidoc https://github.com/opendevise/presentation-bespoke-starter.git
-   cd presentation-bespoke-starter
-
-Then, install the required dependencies:
+Install the required dependencies:
 
  $ bundle && npm i
 
