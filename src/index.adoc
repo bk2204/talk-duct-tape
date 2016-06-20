@@ -43,6 +43,7 @@ brian m. carlson
 ** Automatic redirect support
 ** Reduced complexity
 ** Less to worry about
+** Better maintainer
 
 // Conversion had one bug.
 
@@ -72,6 +73,7 @@ brian m. carlson
 == Make the Tools Do the Work
 [%build]
 
+* Avoid arguments about style and coding standards.
 * Set clear perltidy rules
 ** It's either tidy or it's not.
 ** Re-tidying
@@ -80,7 +82,6 @@ brian m. carlson
 * Codify as much as possible in automated tools.
 ** Commit message standards.
 ** cplint
-* Avoid arguments about style and coding standards.
 * Now the tools are the bad guy.
 
 // Next person to touch rule.
@@ -98,7 +99,7 @@ brian m. carlson
 == Send a Patch
 [%build]
 
-* Sending even small, trivial patches are a great way to get it done.
+* Sending even small, trivial patches are a great way to get stuff done
 * Discussion becomes about the best way to solve the problem, instead of
 	_whether_ to solve the problem.
 * Makes changes much easier on maintainers.
