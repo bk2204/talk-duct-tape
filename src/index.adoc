@@ -72,6 +72,17 @@ brian m. carlson
 * People know what to expect
 * “I'm sorry, but it doesn't meet these criteria” or “Yes, we can take that”
 
+== Say “Yes”
+[%build]
+
+* Be willing to make exceptions.
+** Can I add a small, non-regression bugfix that's affecting a lot of users?
+** Can I add improved error handling in this feature?
+* These _are_ exceptions.
+** Low risk change
+** Exceptions are to benefit users and stakeholders (e.g. support staff)
+** If it becomes a problem, you can always go back to “no.”
+
 == Make the Tools Do the Work
 [%build]
 
@@ -87,17 +98,6 @@ brian m. carlson
 ** cplint
 
 // Next person to touch rule.
-
-== Say “Yes”
-[%build]
-
-* Be willing to make exceptions.
-** Can I add a small, non-regression bugfix that's affecting a lot of users?
-** Can I add improved error handling in this feature?
-* These _are_ exceptions.
-** Low risk change
-** Exceptions are to benefit users and stakeholders (e.g. support staff)
-** If it becomes a problem, you can always go back to “no.”
 
 == Send a Patch
 [%build]
