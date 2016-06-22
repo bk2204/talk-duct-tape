@@ -98,6 +98,8 @@ brian m. carlson
 ** cplint
 
 // Next person to touch rule.
+// Warnings and errors:
+// whitespace, perlcritic, perltidy, module usage, compile, module used/unused
 
 == Send a Patch
 [%build]
