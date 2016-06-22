@@ -54,26 +54,29 @@ brian m. carlson
 ** Can I merge a 2000-line change for tomorrow's release?
 ** Can I re-architect this subsystem in the maintenance branch?
 ** Can you add major new functionality within a week and a half?
+* Good intentions
 * People don't like “no”
-** People like it better than the consequences
+** People like it better than risky changes breaking things
 ** Important to set reasonable expectations
 ** Offer alternatives.
 
 // Not saying “no” to lord power over people, but because the alternative is
 // madness.
 
-== Make the Rules the Bad Guy
+== Have Clear Criteria
 [%build]
 
 * Clear, articulable rules about what can go in maintenance branches
 * Clear limits on how much time can be spent on a task (e.g. 8 hours)
 * Clear coding standards
-* “I'm sorry, but it doesn't meet these criteria.”
+* People know what to expect
+* “I'm sorry, but it doesn't meet these criteria” or “Yes, we can take that”
 
 == Make the Tools Do the Work
 [%build]
 
 * Avoid arguments about style and coding standards.
+* Easy for people to know what's expected
 * Set clear perltidy rules
 ** It's either tidy or it's not.
 ** Re-tidying
@@ -82,7 +85,6 @@ brian m. carlson
 * Codify as much as possible in automated tools.
 ** Commit message standards.
 ** cplint
-* Now the tools are the bad guy.
 
 // Next person to touch rule.
 
@@ -93,8 +95,9 @@ brian m. carlson
 ** Can I add a small, non-regression bugfix that's affecting a lot of users?
 ** Can I add improved error handling in this feature?
 * These _are_ exceptions.
+** Low risk change
+** Exceptions are to benefit users and stakeholders (e.g. support staff)
 ** If it becomes a problem, you can always go back to “no.”
-** See the rules.
 
 == Send a Patch
 [%build]
